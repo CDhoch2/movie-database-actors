@@ -4,13 +4,18 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<parent>
-		<groupId>de.codecentric</groupId>
-		<artifactId>movie-database</artifactId>
-		<version>0.0.1-SNAPSHOT</version>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>1.2.0.RELEASE</version>
 	</parent>
+	
 
+
+	<groupId>de.codecentric</groupId>
 	<artifactId>movie-database-actors</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
+
 	<name>movie-database-actors</name>
 	<description></description>
 
@@ -28,6 +33,7 @@
 		<dependency>
 		    <groupId>de.codecentric</groupId>
 		    <artifactId>spring-boot-starter-admin-client</artifactId>
+		    <version>1.1.1</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
