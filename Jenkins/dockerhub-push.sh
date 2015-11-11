@@ -1,11 +1,9 @@
 #!/usr/bin/env bash
-echo "Shell-Skipt"
-printenv
 
 # DockerHub Login
 /home/ec2-user/docker-latest login -e ${dockerhub_mail} -u ${dockerhub_user} -p ${dockerhub_pwd}
 
-#Tag images
+#Tag images mit git commit SHA
 sudo /home/ec2-user/docker-latest tag -f moviedatabase_actors cdzwei/mvdb_actors:$(git log | head -1 | sed s/'commit '//)
 
 # Push to DockerHub
