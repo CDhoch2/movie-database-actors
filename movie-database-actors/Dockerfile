@@ -12,7 +12,7 @@ RUN apt-get update && \
 # copy spring boot jar as 'service.jar'
 COPY target/movie-database-*.jar /service.jar
 
-LABEL git.tag="test"
+LABEL git.tag=$(git log | head -1 | sed s/'commit '//)
 
 # service port
 EXPOSE 8082
