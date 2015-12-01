@@ -25,6 +25,11 @@ public class InMemoryActorService implements ActorService {
 				"Harrison","Ford", new Date(),"Ewiger Nebendarsteller");
 		actor.getMovieIds().add(UUID.fromString("240342ea-84c8-415f-b1d5-8e4376191aeb"));
 		idToActorMap.put(actor.getId(), actor);
+		
+		actor = new Actor(UUID.fromString("240342ea-84c8-415f-b1d5-8e4376191aef"), "Affleck", "Ben", new Date(), "Tütenmann");
+		actor.getMovieIds().add(UUID.fromString("240342ea-84c8-415f-b1d5-8e4376191aef"));
+		idToActorMap.put(actor.getId(), actor);
+
 	}
 	
 	@Override
